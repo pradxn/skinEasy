@@ -1,0 +1,170 @@
+.circle-button {
+  position: fixed;
+  bottom: 45px;
+  right: 20px;
+  width: 60px; /* Smaller, more elegant button size */
+  height: 60px;
+  border-radius: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  z-index: 999;
+  transition: background-color 0.3s ease; 
+  background-color: #ffffff; /* Changed to white for a clean, professional look */
+}
+
+.circle-icon {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 120px; /* Adjusted for better visual spacing */
+  right: 20px;
+  width: 350px; /* Slightly wider for a better layout */
+  background-color: #ffffff; /* White background for a clean look */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 8px; /* Less pronounced border-radius for a more modern look */
+  z-index: 999;
+}
+
+.chatbox-header {
+  background-color: #4a69bd; /* A more subdued blue */
+  color: #ffffff;
+  padding: 15px 20px; /* Increased padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: 'Helvetica Neue', sans-serif; /* Professional font choice */
+}
+
+.chatbox-header h1 {
+  margin: 0;
+  font-size: 20px; /* Slightly larger for readability */
+  font-weight: normal; /* Less boldness for elegance */
+}
+
+.close-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px; /* Larger for easier interaction */
+}
+
+.close-button:hover {
+  color: #f8c291; /* Softer hover color */
+}
+
+.chatbox-content {
+  padding: 15px 20px; /* Consistent padding with the header */
+  color: #2c3e50; /* Dark grey for readability */
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.chatbox-input {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px; /* Consistent padding with the rest of the chatbox */
+}
+
+textarea {
+  flex-grow: 1;
+  border: 1px solid #ced4da; /* Defined border for clarity */
+  padding: 12px; /* Comfortable padding for typing */
+  border-radius: 4px; /* Modern border radius */
+  background-color: #ecf0f1; /* Off-white background for subtle contrast */
+  resize: none;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.send-button {
+  background-color: #4a69bd; /* Matching the header for consistency */
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px; /* Proportionate padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.send-button:hover {
+  background-color: #3c6382; /* Darker shade on hover for an interactive feel */
+}
+
+/* WhatsApp Chat Section Styling */
+.whatsapp-chat {
+  background-color: #25D366;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px; /* Consistent border-radius */
+  border-bottom: 2px solid #ffffff; /* More pronounced separation line */
+  margin-bottom: 15px; /* Space between WhatsApp section and form */
+}
+
+.whatsapp-chat a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Larger font size for better visibility */
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.whatsapp-chat a:hover {
+  color: #ddffe7; /* Lighter green on hover for a subtle effect */
+}
+
+/* Aesthetic and Classy Form Designs */
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for a clean look */
+  padding: 0 20px 20px; /* Padding without affecting the WhatsApp section */
+}
+
+.query-form input,
+.query-form textarea {
+  background-color: #ecf0f1; /* Consistent with the textarea */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.query-form input::placeholder,
+.query-form textarea::placeholder {
+  color: #95a5a6; /* Light grey placeholder for a subtle look */
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  outline: none;
+  border-color: #4a69bd; /* Matching the chatbox header */
+  box-shadow: 0 0 0 0.2rem rgba(74, 105, 189, 0.25); /* Subtle focus glow */
+}
+
+.query-form button[type="submit"] {
+  background-color: #4a69bd; /* Consistent with other buttons */
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.query-form button[type="submit"]:hover {
+  background-color: #3c6382;
+}

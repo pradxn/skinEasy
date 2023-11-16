@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* App Styles */
+.App {
+  text-align: center;
+  background-color: beige;
+}
+
+.title-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title-name {
+  margin-right: 20px;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.title-name h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  color: white; /* Initially set to black */
+  animation: slideIn 1s ease-in-out forwards; /* Text slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.title-name a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none; /* Initially hide for non-mobile */
+  cursor: pointer;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: green; /* Set the color to green */
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Style for the header-menu component */
+.header-menu {
+  background: black;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the entire navbar horizontally */
+  align-items: center;
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.header-menu nav ul {
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Add this line to make the navigation items flex containers */
+  justify-content: center; /* Center the navigation items horizontally */
+}
+
+.header-menu nav ul li {
+  margin: 25px;
+}
+
+.header-menu nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+
+.header-menu nav ul li a:hover {
+  border-bottom: 2px solid blue;
+}
+
+.header-menu .MobileNavigation {
+  display: none;
+}
+
+.header-menu .Navigation {
+  justify-content: center;
+  align-self: center;
+}
+
+/* Style for the NavLinks component within header-menu */
+.header-menu .NavLinks {
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.header-menu .NavLinks ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the list horizontally */
+}
+
+.header-menu .NavLinks li {
+  margin: 0 20px;
+}
+
+.header-menu .NavLinks a {
+  text-decoration: none;
+  color: #333; /* Change the link color */
+  font-size: 16px;
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.header-menu .NavLinks a:hover {
+  color: beige; /* Change the link color on hover */
+}
+
+/* Search Box Styles */
+/* Updated Search Box Styles */
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align center horizontally */
+  align-items: center; /* Align center vertically */
+  margin-left: auto;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.search-box input {
+  padding: 15px; /* Increase padding for a bigger input field */
+  font-family: 'Arial, sans-serif';
+  border: 2px solid #ccc;
+  border-radius: 15px; /* Rounded corners for aesthetics */
+  width: 100%;
+  max-width: 500px; /* Increased max-width for a larger input field */
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out forwards, scaleIn 1s ease-in-out 0.5s forwards; /* Fade-in and scale-in animations */
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Account Page Link Styles */
+.account-link {
+  margin-left: 20px;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.account-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .title-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-menu nav ul {
+    display: none;
+  }
+
+  .search-box {
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .account-link {
+    margin-top: 10px;
+    margin-left: auto;
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+  }
+
+  .header-menu .MobileNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+  }
+
+  .header-menu .MobileNavigation .hamburger-menu {
+    display: block;
+  }
+
+  .header-menu .MobileNavigation .Hamburger {
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .header-menu .NavLinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

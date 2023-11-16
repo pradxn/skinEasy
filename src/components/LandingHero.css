@@ -1,0 +1,92 @@
+.landing-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 25%;
+    left: 5%; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    color: black; /* Set the text color */
+    text-align: left;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInLeft 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; /* Set the text color */
+    animation: fadeInUp 1s ease-in-out forwards;
+    z-index: 999;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555; /* Set the text color */
+    animation: fadeInUp 1s ease-in-out 0.5s forwards;
+  }
+  
+  .hero-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent; /* Set the button background color to transparent */
+    color: #3498db; /* Set the button text color */
+    border: 2px solid #3498db; /* Set the button border color */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+  }
+  
+  .hero-buttons button:hover {
+    background-color: #3498db; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
