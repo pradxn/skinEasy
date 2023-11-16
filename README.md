@@ -48,10 +48,10 @@ We welcome contributions from the community to enhance and expand the skinEasy p
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [BSD 3-Clause License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Contact Us
 
-Have questions or suggestions? Reach out to us at [info@skineasy.com](mailto:info@skineasy.com) or visit our [website](https://www.skineasy.com) for more information.
+Have questions or suggestions? Reach out to us at [info@skineasy.com](mailto:info@skineasy.com) or visit our [website](https://www.skineasy.com) (under construction) for more information.
 
 Join us on our journey to redefine personal care for brown skin with skinEasy!
