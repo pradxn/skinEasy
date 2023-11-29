@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiOutlineUserCircle } from 'react-icons/hi';
 import './App.css';
 
@@ -12,13 +12,31 @@ import TermsFooter from './components/Footer/TermsFooter';
 import ShopByType from './components/LandingHeros/ShopByType';
 import ShopByProduct from './components/LandingHeros/ShopByProduct';
 import ChangeFunction from './components/LandingHeros/ChangeFunction';
+import { Link } from 'react-router-dom';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = () => {
+    if (searchQuery.trim() !== '') {
+      window.location.href = "/search";
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
   return (
     <>
       <div className='App'>
 
-        <div> <ChatBot icon = {iconImage}/> </div>
+        <div> <ChatBot icon={iconImage} /> </div>
         <div className="title-header">
           <div className="title-name">
             <a href="/">
@@ -51,7 +69,10 @@ function App() {
 
           {/* Search Box */}
           <div className="search-box">
-            <input type="text" placeholder="Search for products..." />
+            <input type="text" placeholder="Search for products..."
+              value={searchQuery}
+              onChange={handleInputChange}
+              onKeyUp={handleKeyPress} />
           </div>
 
           {/* Account Page Link with User Icon */}
@@ -62,7 +83,7 @@ function App() {
 
 
         {/* Landing Hero */}
-        <div> <LandingHero icon={landingImage}/> </div>
+        <div> <LandingHero icon={landingImage} /> </div>
 
         <br />
 

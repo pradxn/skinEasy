@@ -1,18 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TermsFooter.css";
 
 function TermsFooter() {
+  const [email, setEmail] = useState('');
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can perform any action, such as sending the email to a server
+    console.log('Email submitted:', email);
+    // Reset the email input field
+    setEmail('');
+  };
   return (
     <div className="terms-footer-container">
       <div className="footer-line"></div> {/* Line above */}
       <div className="terms-footer">
         <div className="tagline">
-          <div style={{ whiteSpace: "nowrap" }}>
+          <div>
             {/*Check your products for purity. Throw those faulty & fake
             products. Find out the reality of those "organic" products.*/}
-            Seba: Elevating Skincare Choices Through In-Depth Ingredient Analysis for Lasting Skin Wellness
+            {/* <p>Seba: Elevating Skincare Choices Through In-Depth Ingredient Analysis for Lasting Skin Wellness</p> */}
+            <p>
+              Seba: Elevating Skincare Choices Through In-Depth Ingredient Analysis for Lasting Skin Wellness
+            </p>
           </div>
           <br />
+        </div>
+
+        <br />
+        <div className="newsletter">
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="emailInput">Sign up for our newsletter :</label>
+            <input
+              type="email"
+              id="emailInput"
+              value={email}
+              onChange={handleInputChange}
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
 
         <br />

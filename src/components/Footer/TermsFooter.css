@@ -11,13 +11,39 @@ body {
 }
 
 .tagline {
-  display: flex;
-  align-items: start;
+  display: flexbox;
+  align-items: center;
   padding: 2px;
   margin-left: 20%;
-  font-size: 18px;
+  margin-right: 20%;
+  font-size: 15px;
   font-weight: bold;
   color: grey;
+}
+
+.newsletter label {
+  color: grey;
+  font-weight: bold;
+  font-size: large;
+}
+
+.newsletter input {
+  color: black;
+  font-size: medium;
+  text-align: center;
+  background-color: rgb(217, 218, 219);
+  margin: 20px;
+  width: 20%;
+  padding: 2px;
+
+}
+
+.newsletter button {
+  font-weight: bold;
+  font-size: medium;
+  padding-left: 2px;
+  padding-right: 2px;
+
 }
 
 .terms-footer-container {
