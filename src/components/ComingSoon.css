@@ -1,0 +1,41 @@
+.coming-soon-page-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #FFF, #892be2a2, #FFA07A);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .coming-soon-title {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon-description {
+    font-size: 1.5rem;
+    color: #FFF; /* Set your desired text color */
+  }
+  
