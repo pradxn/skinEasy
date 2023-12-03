@@ -18,7 +18,10 @@ body {
   margin-right: 20%;
   font-size: 15px;
   font-weight: bold;
-  color: grey;
+}
+
+.tagline p{
+  color: white;
 }
 
 .newsletter label {
