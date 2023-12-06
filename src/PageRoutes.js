@@ -27,37 +27,34 @@ const LandingPage = () => {
 
                 <Route path="/search" element={<ComingSoon />} />
 
+                <Route path="scalp/balanced" element={<ComingSoon />} />
                 <Route path="scalp/combination" element={<ComingSoon />} />
                 <Route path="scalp/dry" element={<ComingSoon />} />
-                <Route path="scalp/normal" element={<ComingSoon />} />
                 <Route path="scalp/oily" element={<ComingSoon />} />
-                <Route path="scalp/sensitive" element={<ComingSoon />} />
+                
 
                 <Route path="hair/coily" element={<ComingSoon />} />
                 <Route path="hair/curly" element={<ComingSoon />} />
-                <Route path="hair/normal" element={<ComingSoon />} />
-                <Route path="hair/thick" element={<ComingSoon />} />
-                <Route path="hair/thin" element={<ComingSoon />} />
                 <Route path="hair/straight" element={<ComingSoon />} />
                 <Route path="hair/wavey" element={<ComingSoon />} />
 
+                <Route path="face/balanced" element={<ComingSoon />} />
                 <Route path="face/combination" element={<ComingSoon />} />
                 <Route path="face/dry" element={<ComingSoon />} />
                 <Route path="face/normal" element={<ComingSoon />} />
                 <Route path="face/oily" element={<ComingSoon />} />
-                <Route path="face/sensitive" element={<ComingSoon />} />
-
+                
                 <Route path="body/combination" element={<ComingSoon />} />
                 <Route path="body/dry" element={<ComingSoon />} />
                 <Route path="body/normal" element={<ComingSoon />} />
                 <Route path="body/oily" element={<ComingSoon />} />
                 <Route path="body/sensitive" element={<ComingSoon />} />
 
-                <Route path="intimate/combination" element={<ComingSoon />} />
-                <Route path="intimate/dry" element={<ComingSoon />} />
-                <Route path="intimate/normal" element={<ComingSoon />} />
-                <Route path="intimate/oily" element={<ComingSoon />} />
-                <Route path="intimate/sensitive" element={<ComingSoon />} />
+                <Route path="intimate/armpits" element={<ComingSoon />} />
+                <Route path="intimate/genitals" element={<ComingSoon />} />
+                <Route path="intimate/glutes" element={<ComingSoon />} />
+                <Route path="intimate/innerglutes" element={<ComingSoon />} />
+                <Route path="intimate/innerthighs" element={<ComingSoon />} />
 
                 <Route path="/cleanser" element={<ComingSoon />} />
                 <Route path="/toner" element={<ComingSoon />} />

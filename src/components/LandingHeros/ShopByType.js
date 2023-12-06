@@ -1,37 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import './ShopByType.css';
 
-const scalpImage1 = "https://skineasy.s3.us-west-2.amazonaws.com/scalp1.jpg";
-const scalpImage2 = "https://skineasy.s3.us-west-2.amazonaws.com/scalp1.jpg";
-const scalpImage3 = "https://skineasy.s3.us-west-2.amazonaws.com/scalp1.jpg";
-const scalpImage4 = "https://skineasy.s3.us-west-2.amazonaws.com/scalp1.jpg";
-const scalpImage5 = "https://skineasy.s3.us-west-2.amazonaws.com/scalp1.jpg";
+const balancedscalp = "https://skineasy.s3.us-west-2.amazonaws.com/balanced.png";
+const dryscalp = "https://skineasy.s3.us-west-2.amazonaws.com/dry.png";
+const combinationscalp = "https://skineasy.s3.us-west-2.amazonaws.com/combination.png";
+const oilyscalp = "https://skineasy.s3.us-west-2.amazonaws.com/oily.png";
 
-const hairImage1 = "https://skineasy.s3.us-west-2.amazonaws.com/hair1.jpg";
-const hairImage2 = "https://skineasy.s3.us-west-2.amazonaws.com/hair1.jpg";
-const hairImage3 = "https://skineasy.s3.us-west-2.amazonaws.com/hair1.jpg";
-const hairImage4 = "https://skineasy.s3.us-west-2.amazonaws.com/hair1.jpg";
-const hairImage5 = "https://skineasy.s3.us-west-2.amazonaws.com/hair1.jpg";
+
+const coilyhair = "https://skineasy.s3.us-west-2.amazonaws.com/coily.png";
+const curlyhair = "https://skineasy.s3.us-west-2.amazonaws.com/curly.png";
+const straighthair = "https://skineasy.s3.us-west-2.amazonaws.com/straight.png";
+const waveyhair = "https://skineasy.s3.us-west-2.amazonaws.com/wavey.png";
 
 // Face Images
-const faceImage1 = "https://skineasy.s3.us-west-2.amazonaws.com/face1.jpg";
-const faceImage2 = "https://skineasy.s3.us-west-2.amazonaws.com/face1.jpg";
-const faceImage3 = "https://skineasy.s3.us-west-2.amazonaws.com/face1.jpg";
-const faceImage4 = "https://skineasy.s3.us-west-2.amazonaws.com/face1.jpg";
-const faceImage5 = "https://skineasy.s3.us-west-2.amazonaws.com/face1.jpg";
+const combinationface = "https://skineasy.s3.us-west-2.amazonaws.com/combination.png";
+const dryface = "https://skineasy.s3.us-west-2.amazonaws.com/dry.png";
+const normalface = "https://skineasy.s3.us-west-2.amazonaws.com/normal.png";
+const oilyface = "https://skineasy.s3.us-west-2.amazonaws.com/oily.png";
+const sensitiveface = "https://skineasy.s3.us-west-2.amazonaws.com/sensitive.png";
 
 // Intimate Images
-const intimateImage1 = "https://skineasy.s3.us-west-2.amazonaws.com/intimate1.jpg";
-const intimateImage2 = "https://skineasy.s3.us-west-2.amazonaws.com/intimate1.jpg";
-const intimateImage3 = "https://skineasy.s3.us-west-2.amazonaws.com/intimate1.jpg";
-const intimateImage4 = "https://skineasy.s3.us-west-2.amazonaws.com/intimate1.jpg";
-const intimateImage5 = "https://skineasy.s3.us-west-2.amazonaws.com/intimate1.jpg";
+const armpits = "https://skineasy.s3.us-west-2.amazonaws.com/armpits.png";
+const genitals = "https://skineasy.s3.us-west-2.amazonaws.com/genitals.png";
+const glutes = "https://skineasy.s3.us-west-2.amazonaws.com/glutes.png";
+const innerglutes = "https://skineasy.s3.us-west-2.amazonaws.com/innerglutes.png";
+const innerthighs = "https://skineasy.s3.us-west-2.amazonaws.com/innerthighs.png";
 
-const bodyImage1 = "https://skineasy.s3.us-west-2.amazonaws.com/body1.jpg";
-const bodyImage2 = "https://skineasy.s3.us-west-2.amazonaws.com/body1.jpg";
-const bodyImage3 = "https://skineasy.s3.us-west-2.amazonaws.com/body1.jpg";
-const bodyImage4 = "https://skineasy.s3.us-west-2.amazonaws.com/body1.jpg";
-const bodyImage5 = "https://skineasy.s3.us-west-2.amazonaws.com/body1.jpg";
+// Body Images
+const combinationbody = "https://skineasy.s3.us-west-2.amazonaws.com/combination.png";
+const drybody = "https://skineasy.s3.us-west-2.amazonaws.com/dry.png";
+const elbowsandknees = "https://skineasy.s3.us-west-2.amazonaws.com/elbowsandknees.png";
+const normalbody = "https://skineasy.s3.us-west-2.amazonaws.com/normal.png";
+const oilybody = "https://skineasy.s3.us-west-2.amazonaws.com/oily.png";
+const sensitivebody = "https://skineasy.s3.us-west-2.amazonaws.com/sensitive.png";
 
 
 const ShopByType = () => {
@@ -50,41 +51,38 @@ const ShopByType = () => {
 
   const initialContent = {
     Scalp: [
-      { src: scalpImage1, name: 'Combination', link: "scalp/combination" },
-      { src: scalpImage2, name: 'Dry', link: "scalp/dry" },
-      { src: scalpImage3, name: 'Normal', link: "scalp/normal" },
-      { src: scalpImage4, name: 'Oily', link: "scalp/oily" },
-      { src: scalpImage5, name: 'Sensitive', link: "scalp/sensitive" },
+      { src: balancedscalp, name: 'Balanced', link: "scalp/balanced" },
+      { src: combinationscalp, name: 'Combination', link: "scalp/mixed" },
+      { src: dryscalp, name: 'Dry', link: "scalp/dry" },
+      { src: oilyscalp, name: 'Oily', link: "scalp/oily" },
     ],
     Hair: [
-      { src: hairImage1, name: 'Coily', link: "hair/coily" },
-      { src: hairImage2, name: 'Curly', link: "hair/curly" },
-      { src: hairImage3, name: 'Normal', link: "hair/normal" },
-      { src: hairImage4, name: 'Thick', link: "hair/thick" },
-      { src: hairImage5, name: 'Thin', link: "hair/thin" },
-      { src: hairImage5, name: 'Straight', link: "hair/straight" },
-      { src: hairImage5, name: 'Wavey', link: "hair/wavey" },
+      { src: coilyhair, name: 'Coily', link: "hair/coily" },
+      { src: curlyhair, name: 'Curly', link: "hair/curly" },
+      { src: straighthair, name: 'Straight', link: "hair/straight" },
+      { src: waveyhair, name: 'Wavey', link: "hair/wavey" },
     ],
     Face: [
-      { src: faceImage1, name: 'Combination', link: "face/combination" },
-      { src: faceImage2, name: 'Dry', link: "face/dry" },
-      { src: faceImage3, name: 'Normal', link: "face/normal" },
-      { src: faceImage4, name: 'Oily', link: "face/oily" },
-      { src: faceImage5, name: 'Sensitive', link: "face/sensitive" },
+      { src: combinationface, name: 'Combination', link: "face/combination" },
+      { src: dryface, name: 'Dry', link: "face/dry" },
+      { src: normalface, name: 'Normal', link: "face/normal" },
+      { src: oilyface, name: 'Oily', link: "face/oily" },
+      { src: sensitiveface, name: 'Sensitive', link: "face/sensitive" },
     ],
     Body: [
-      { src: bodyImage1, name: 'Combination', link: "body/combination" },
-      { src: bodyImage2, name: 'Dry', link: "body/dry" },
-      { src: bodyImage3, name: 'Normal', link: "body/normal" },
-      { src: bodyImage4, name: 'Oily', link: "body/oily" },
-      { src: bodyImage5, name: 'Sensitive', link: "body/sensitive" },
+      { src: combinationbody, name: 'Combination', link: "body/combination" },
+      { src: drybody, name: 'Dry', link: "body/dry" },
+      { src: elbowsandknees, name: 'Elbows & Knees', link: "body/joints" },
+      { src: normalbody, name: 'Normal', link: "body/normal" },
+      { src: oilybody, name: 'Oily', link: "body/oily" },
+      { src: sensitivebody, name: 'Sensitive', link: "body/sensitive" },
     ],
     Intimate: [
-      { src: intimateImage1, name: 'Combination', link: "intimate/combination" },
-      { src: intimateImage2, name: 'Dry', link: "intimate/dry" },
-      { src: intimateImage3, name: 'Normal', link: "intimate/normal" },
-      { src: intimateImage4, name: 'Oily', link: "intimate/oily" },
-      { src: intimateImage5, name: 'Sensitive', link: "intimate/sensitive" },
+      { src: armpits, name: 'Arm pits', link: "intimate/armpits" },
+      { src: genitals, name: 'Genitals', link: "intimate/genitals" },
+      { src: glutes, name: 'Glutes', link: "intimate/glutes" },
+      { src: innerglutes, name: 'Inner Glutes', link: "intimate/innerglutes" },
+      { src: innerthighs, name: 'Inner Thighs', link: "intimate/innerthighs" },
     ],
   };
 
