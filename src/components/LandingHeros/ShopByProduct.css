@@ -24,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Adjusted to ensure equal spacing between columns */
+    padding: 20px;
   }
   
   .product-tile {
@@ -87,6 +88,7 @@
   
   .product-button:hover {
     font-weight: bolder;
-    color: royalblue;
+    background-color: white;
+    color: black;
   }
   

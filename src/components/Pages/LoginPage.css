@@ -47,7 +47,7 @@ body {
   }
   
   button {
-    background-color: #00ff08;
+    background-color: black;
     color: white;
     padding: 10px;
     border: none;
@@ -56,7 +56,8 @@ body {
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: white;
+    color: black;
   }
   
   .forgot-password {

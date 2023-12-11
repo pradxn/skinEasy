@@ -5,15 +5,6 @@ import './PricingTable.css';
 const PricingTable = () => {
   return (
     <>
-    <div className="header">
-      <div className="title-name">
-        <a href="/">
-          <h1><b><i>skin</i></b>Easy</h1>
-          <p>by cutis.ai</p>
-        </a>
-      </div>
-    </div>
-    
     <section>
         <div class="content">
 

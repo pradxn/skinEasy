@@ -9,7 +9,8 @@ import Footer from './components/Footer/Footer';
 import TermsFooter from './components/Footer/TermsFooter';
 import ShopByType from './components/LandingHeros/ShopByType';
 import ShopByProduct from './components/LandingHeros/ShopByProduct';
-import ChangeFunction from './components/LandingHeros/ChangeFunction';
+//import ChangeFunction from './components/LandingHeros/ChangeFunction';
+import ShopByRoutine from './components/LandingHeros/ShopByRoutine';
 
 
 function App() {
@@ -94,8 +95,11 @@ function App() {
         {/* Shop by product : cleanser, toner, spf and others */}
         <div> <ShopByProduct /> </div>
 
+        {/* Shop by routine : day | night 
+        <div> <ChangeFunction /> </div> */}
+
         {/* Shop by routine : day | night */}
-        <div> <ChangeFunction /> </div>
+        <div><ShopByRoutine /></div>
 
         {/* Terms footer */}
         <div> <TermsFooter /> </div>

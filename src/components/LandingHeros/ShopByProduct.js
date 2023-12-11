@@ -2,18 +2,26 @@
 import React from 'react';
 import './ShopByProduct.css';
 
-const Cleanser = "https://skineasy.s3.us-west-2.amazonaws.com/cleanser.jpg";
+const Cleanser = "https://skineasy.s3.us-west-2.amazonaws.com/cetaphil.jpeg";
+const Toner = "https://skineasy.s3.us-west-2.amazonaws.com/aroma_magic.jpeg";
+const Moisturizer = "https://skineasy.s3.us-west-2.amazonaws.com/dotkey.jpeg";
+const Serum = "https://skineasy.s3.us-west-2.amazonaws.com/niacinamide.jpeg";
+const SPF = "https://skineasy.s3.us-west-2.amazonaws.com/moody.jpeg";
+const LipBalm = "https://skineasy.s3.us-west-2.amazonaws.com/nmfe.jpeg";
+const Bodywash = "https://skineasy.s3.us-west-2.amazonaws.com/pearsbodywash.jpeg";
+const Shampoo = "https://skineasy.s3.us-west-2.amazonaws.com/loreal.jpeg";
+const Conditioner = "https://skineasy.s3.us-west-2.amazonaws.com/justhuman.jpeg";
 
 const productTypes = [
   { name: 'Cleanser', image: Cleanser, link: '/cleanser' },
-  { name: 'Toner', image: Cleanser, link: '/toner' },
-  { name: 'Moisturizer', image: Cleanser, link: '/moisturizer' },
-  { name: 'Serum', image: Cleanser, link: '/serum' },
-  { name: 'SPF', image: Cleanser, link: '/spf' },
-  { name: 'Lip Balm', image: Cleanser, link: '/lip-balm' },
-  { name: 'Body Wash', image: Cleanser, link: '/body-wash' },
-  { name: 'Shampoo', image: Cleanser, link: '/shampoo' },
-  { name: 'Conditioner', image: Cleanser, link: '/conditioner' },
+  { name: 'Toner', image: Toner, link: '/toner' },
+  { name: 'Moisturizer', image: Moisturizer, link: '/moisturizer' },
+  { name: 'Serum', image: Serum, link: '/serum' },
+  { name: 'SPF', image: SPF, link: '/spf' },
+  { name: 'Lip Balm', image: LipBalm, link: '/lip-balm' },
+  { name: 'Body Wash', image: Bodywash, link: '/body-wash' },
+  { name: 'Shampoo', image: Shampoo, link: '/shampoo' },
+  { name: 'Conditioner', image: Conditioner, link: '/conditioner' },
 ];
 
 const ShopByProduct = () => {
