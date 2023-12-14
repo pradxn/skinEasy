@@ -16,7 +16,6 @@ const ComingSoon = () => {
       </div>
       <div className="coming-soon-container">
         <ol>
-          <li>Change all images to actual products with names</li>
           <li>Make a mock landing page for Cleanser category to show what is being built</li>
           <li>cleanser (animation like skineasy) : different skin types + concerns </li>
           <li>ecom filters : image : name : price </li>
