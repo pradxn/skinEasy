@@ -193,25 +193,25 @@ const ShopByRoutine = () => {
             className={`timeline-point ${currentStep === 'Toner' ? 'active' : ''}`}
             onClick={() => handleTimelineClick('Toner')}
           >
-            Toner
+            {isMorning ? 'Toner' : 'Serum'}
           </div>
           <div
             className={`timeline-point ${currentStep === 'Serum' ? 'active' : ''}`}
             onClick={() => handleTimelineClick('Serum')}
           >
-            Serum
+            {isMorning ? 'Serum' : 'Night Moisturizer'}
           </div>
           <div
             className={`timeline-point ${currentStep === 'Moisturizer' ? 'active' : ''}`}
             onClick={() => handleTimelineClick('Moisturizer')}
           >
-            {isMorning ? 'Moisturizer' : 'Night Moisturizer'}
+            {isMorning ? 'Moisturizer' : 'Eye Cream'}
           </div>
           <div
             className={`timeline-point ${currentStep === 'SPF' ? 'active' : ''}`}
             onClick={() => handleTimelineClick('SPF')}
           >
-            {isMorning ? 'SPF' : 'Eye Cream & Lip Balm'}
+            {isMorning ? 'SPF' : 'Lip Balm'}
           </div>
         </div>
 

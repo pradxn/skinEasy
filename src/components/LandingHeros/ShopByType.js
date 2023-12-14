@@ -98,10 +98,12 @@ const ShopByType = () => {
   const selectedContent = initialContent[selectedCategory];
 
   return (
+    <>
+    <div className='section-container'>
     <div className={`products-section ${loaded ? 'loaded' : ''}`}>
       <br />
-      <br />
       <h1 className={`products-heading ${loaded ? 'loaded' : ''}`}>Discover Your Beauty</h1>
+      <h3><i>Buy products based on ingredients 📃 rather than lables 🏷️</i></h3>
       <br />
       <br />
       <div className="products-container">
@@ -140,6 +142,8 @@ const ShopByType = () => {
       <br />
       <br />
     </div>
+    </div>
+    </>
   );
 };
 

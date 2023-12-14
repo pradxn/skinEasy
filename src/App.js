@@ -8,6 +8,7 @@ import ChatBot from './components/ChatBot';
 import Footer from './components/Footer/Footer';
 import TermsFooter from './components/Footer/TermsFooter';
 import ShopByType from './components/LandingHeros/ShopByType';
+import AboutUs from './components/Pages/AboutUs';
 import ShopByProduct from './components/LandingHeros/ShopByProduct';
 //import ChangeFunction from './components/LandingHeros/ChangeFunction';
 import ShopByRoutine from './components/LandingHeros/ShopByRoutine';
@@ -91,6 +92,9 @@ function App() {
 
         {/* Shop by type : skin, hair and others*/}
         <div> <ShopByType /> </div>
+
+        {/* About us */}
+        <div><AboutUs /></div>
 
         {/* Shop by product : cleanser, toner, spf and others */}
         <div> <ShopByProduct /> </div>

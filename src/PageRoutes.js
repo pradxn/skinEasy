@@ -6,6 +6,7 @@ import ComingSoon from './components/ComingSoon.js';
 import SebaTest from './components/SebaTest.js';
 import PricingTable from './components/Pages/PricingTable.js';
 import LoginPage from './components/Pages/LoginPage.js';
+import AboutUsPage from './components/Pages/AboutUsPage.js';
 
 const LandingPage = () => {
     return (
@@ -66,7 +67,7 @@ const LandingPage = () => {
                 <Route path="/shampoo" element={<ComingSoon />} />
                 <Route path="/conditioner" element={<ComingSoon />} />
 
-                <Route path="/about" element={<ComingSoon />} />
+                <Route path="/about" element={<AboutUsPage />} />
                 <Route path="/grading-method" element={<ComingSoon />} />
                 <Route path="/consult" element={<ComingSoon />} />
                 <Route path="/home-consult" element={<ComingSoon />} />

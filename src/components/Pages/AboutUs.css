@@ -1,0 +1,110 @@
+/* AboutUs.css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dela+Gothic+One&display=swap');
+
+.about-us-section-container {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-us-content {
+  font-size: large;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.problem-number {
+  font-size: 15em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ff4e50, #f9d423); /* Gradient from red to yellow */
+  background-clip: text;
+  color: transparent;
+}
+
+.problems-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 38px;
+  margin-top: 20px;
+  color: white;
+}
+
+.problems-text-bottom {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.see-how-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6666; /* Red */
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.see-how-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.see-how-button:hover {
+  background-color: #cc0000; /* Darker Red on hover */
+}
+
+/* AboutUs.css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dela+Gothic+One&display=swap');
+
+.about-us-section-container {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  position: relative; /* Added for positioning the image */
+}
+
+.about-us-content {
+  font-size: large;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* AboutUs.css */
+
+/* AboutUs.css */
+
+/* AboutUs.css */
+
+.image-container {
+    position: absolute;
+    background-color: white;
+    left: 20px;
+    bottom: 200px;
+    border-radius: 100px; /* Adjust the radius as needed */
+    overflow: hidden; /* Ensure the rounded corners are applied */
+    animation: bounce 3s infinite alternate cubic-bezier(0.5, 0.05, 0.5, 0.95); /* Slow bouncing animation with cubic-bezier timing function */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px); /* Adjust the bounce height */
+    }
+    60% {
+      transform: translateY(-10px); /* Adjust the bounce height */
+    }
+  }
+  
+  .thinking-image {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 10px; /* Match the radius of .image-container */
+  }
+      
+/* Rest of your styles remain unchanged */
+

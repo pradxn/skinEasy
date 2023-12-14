@@ -1,0 +1,49 @@
+/* AboutUsPage.css */
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #FFF;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    font-size: 1.2em;
+    color: #FFF;
+    margin-bottom: 30px;
+  }
+  
+  .reasons {
+    font-size: 1.1em;
+  }
+  
+  .alternate-reason {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Add this line */
+    margin-bottom: 20px;
+    height: 100%; /* Add this line */
+  }
+  
+  
+  
+  .reason-text, .reason-image {
+    width: 20vw; /* Take up full width */
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
