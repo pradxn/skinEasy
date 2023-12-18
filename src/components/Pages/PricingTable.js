@@ -68,7 +68,7 @@ const PricingTable = () => {
                     </div>
                     <div class="cost">
                         <p class="amount">₹199</p>
-                        <p class="detail">per team per year</p>
+                        <p class="detail">per year</p>
                     </div>
                 </div>
                 <div class="description">
