@@ -40,6 +40,62 @@ const AboutUsPage = () => {
 
 export default AboutUsPage;
 
+/*
+// AboutUsPage.js
+
+import React from 'react';
+import './AboutUsPage.css';
+
+const AboutUsPage = () => {
+  const reasons = [
+    "You never know if a product is actually suitable",
+    "You need a PhD to figure out what to buy",
+    "They market anything as 'revolutionary'",
+    "They're misleading",
+    "There are endless product choices",
+    "They cheat and call a few substances as 'amazing'",
+    "They include one ingredient that tries to do a little bit of everything—but isn't good at anything.",
+    "They are heavy in fragrances and additives",
+    "They hide behind confusing industry lingo.",
+    "They're priced like Ferraris and perform like golf carts. 🚗"
+  ];
+
+  return (
+    <div className="about-us-container">
+      <h1>Welcome to Our World</h1>
+      <p className="intro">
+        Choosing skincare can be tough, right? At <b><i>skinEasy</i></b>, we get it. Here's why we're not like the others:
+      </p>
+
+      <div className="reasons">
+        {reasons.map((reason, index) => (
+            <div className="reason-text">
+                <ol>
+                    <li>{reason}</li>
+                </ol>
+            </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AboutUsPage;
+*/
+
+/*
+    You never know if a product is actually suitable
+    You need a PhD to figure out what to buy
+    They market anything as "revolutionary"
+    They're misleading
+    There are endless product choices
+    They cheat and call a few substances "amazing"
+    They include one ingredient that tries to do a little bit of everything—but isn't good at anything.
+    They are heavy in fragrances and additives
+    They hide behind confusing industry lingo.
+    They're priced like Ferraris and perform like golf carts. 🚗
+*/
+
 
 /*
 

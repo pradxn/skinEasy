@@ -69,6 +69,9 @@ function TermsFooter() {
 
           <div className="column">
             <span className="column-title">Services</span>
+            <a href="/barcode" rel="noreferrer">
+              Scan a barcode</a>
+            <br />
             <a href="/consult" rel="noreferrer">
               Consult a dermatologist</a>
             <br />
@@ -79,6 +82,7 @@ function TermsFooter() {
               Shop</a>
             <br />
           </div>
+
           <div className="column">
             <span className="column-title">Links</span>
             <a href="/api-ref" rel="noreferrer">

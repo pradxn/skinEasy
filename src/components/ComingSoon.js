@@ -3,26 +3,22 @@ import './ComingSoon.css';
 
 const ComingSoon = () => {
   return (
-    <>
-      <div className="coming-soon-page-container">
+    <div className="coming-soon-page-container">
       <div className="coming-soon-container">
-        <h1 className="coming-soon-title">LAUNCHING SOON</h1>
-        <br />
-        <p className="coming-soon-description">Everything you need at <i>one place</i></p>
-        <br />
-        <p className="second-line-desc">Watch this space for the ultimate personal shopping experience —minus the deceit. </p>
-        <br />
-        <p className="second-line-desc"> 🔽 Scroll down 🔽 </p>
+        <h1 className="coming-soon-title">Get Ready for Something Amazing</h1>
+        <p className="coming-soon-description">Your one-stop solution is on its way</p>
+        <p className="second-line-desc">Stay tuned for an unparalleled shopping experience.</p>
+        <p className="second-line-desc">Scroll down to learn more</p>
       </div>
       <div className="coming-soon-container">
+        <h2 className="coming-soon-title">What's Coming?</h2>
         <ol>
-          <li>Make a mock landing page for Cleanser category to show what is being built</li>
-          <li>cleanser (animation like skineasy) : different skin types + concerns </li>
-          <li>ecom filters : image : name : price </li>
+          <li>Mock landing page for the Cleanser category</li>
+          <li>Interactive cleanser animation for different skin types and concerns</li>
+          <li>E-commerce filters: image, name, price</li>
         </ol>
-      </div>      
       </div>
-    </>
+    </div>
   );
 };
 

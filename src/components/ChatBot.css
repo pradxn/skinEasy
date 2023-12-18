@@ -2,17 +2,21 @@
   position: fixed;
   bottom: 45px;
   right: 20px;
-  width: 60px; /* Smaller, more elegant button size */
+  width: 60px; 
   height: 60px;
-  border-radius: 80%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
-  z-index: 999;
-  transition: background-color 0.3s ease; 
-  background-color: #ffffff; /* Changed to white for a clean, professional look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  background-color: #0084FF;
+}
+
+.circle-button:hover {
+  transform: scale(1.1);
 }
 
 .circle-icon {
@@ -20,35 +24,40 @@
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.circle-button:hover .circle-icon {
+  transform: rotate(90deg);
 }
 
 .chatbox {
   position: fixed;
-  bottom: 120px; /* Adjusted for better visual spacing */
+  bottom: 120px;
   right: 20px;
-  width: 350px; /* Slightly wider for a better layout */
-  background-color: #ffffff; /* White background for a clean look */
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  border-radius: 8px; /* Less pronounced border-radius for a more modern look */
+  width: 350px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   z-index: 999;
 }
 
 .chatbox-header {
-  background-color: #4a69bd; /* A more subdued blue */
+  background-color: #4a69bd;
   color: #ffffff;
-  padding: 15px 20px; /* Increased padding for better spacing */
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  font-family: 'Helvetica Neue', sans-serif; /* Professional font choice */
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .chatbox-header h1 {
   margin: 0;
-  font-size: 20px; /* Slightly larger for readability */
-  font-weight: normal; /* Less boldness for elegance */
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .close-button {
@@ -57,39 +66,32 @@
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 18px; /* Larger for easier interaction */
+  font-size: 18px;
 }
-
 
 .chatbox-content {
-  padding: 15px 20px; /* Consistent padding with the header */
-  color: #2c3e50; /* Dark grey for readability */
+  padding: 15px 20px;
+  color: #2c3e50;
   font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6; /* Increased line height for readability */
-}
-
-.chatbox-input {
-  display: flex;
-  align-items: center;
-  padding: 15px 20px; /* Consistent padding with the rest of the chatbox */
+  line-height: 1.6;
 }
 
 textarea {
   flex-grow: 1;
-  border: 1px solid #ced4da; /* Defined border for clarity */
-  padding: 12px; /* Comfortable padding for typing */
-  border-radius: 4px; /* Modern border radius */
-  background-color: #ecf0f1; /* Off-white background for subtle contrast */
+  border: 1px solid #ced4da;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #ecf0f1;
   resize: none;
   font-size: 14px;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
 .send-button {
-  background-color: #4a69bd; /* Matching the header for consistency */
+  background-color: #4a69bd;
   color: #ffffff;
   border: none;
-  padding: 12px 18px; /* Proportionate padding */
+  padding: 12px 18px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
@@ -98,43 +100,41 @@ textarea {
 }
 
 .send-button:hover {
-  background-color: #3c6382; /* Darker shade on hover for an interactive feel */
+  background-color: #3c6382;
 }
 
-/* WhatsApp Chat Section Styling */
 .whatsapp-chat {
   background-color: #25D366;
   color: #ffffff;
   text-align: center;
   padding: 15px;
-  border-radius: 8px; /* Consistent border-radius */
-  border-bottom: 2px solid #ffffff; /* More pronounced separation line */
-  margin-bottom: 15px; /* Space between WhatsApp section and form */
+  border-radius: 8px;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 15px;
 }
 
 .whatsapp-chat a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px; /* Larger font size for better visibility */
+  font-size: 16px;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
 .whatsapp-chat a:hover {
-  color: #ddffe7; /* Lighter green on hover for a subtle effect */
+  color: #ddffe7;
 }
 
-/* Aesthetic and Classy Form Designs */
 .query-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Increased gap for a clean look */
-  padding: 0 20px 20px; /* Padding without affecting the WhatsApp section */
+  gap: 15px;
+  padding: 0 20px 20px;
 }
 
 .query-form input,
 .query-form textarea {
-  background-color: #ecf0f1; /* Consistent with the textarea */
+  background-color: #ecf0f1;
   border: 1px solid #ced4da;
   border-radius: 4px;
   padding: 12px;
@@ -144,18 +144,18 @@ textarea {
 
 .query-form input::placeholder,
 .query-form textarea::placeholder {
-  color: #95a5a6; /* Light grey placeholder for a subtle look */
+  color: #95a5a6;
 }
 
 .query-form input:focus,
 .query-form textarea:focus {
   outline: none;
-  border-color: #4a69bd; /* Matching the chatbox header */
-  box-shadow: 0 0 0 0.2rem rgba(74, 105, 189, 0.25); /* Subtle focus glow */
+  border-color: #4a69bd;
+  box-shadow: 0 0 0 0.2rem rgba(74, 105, 189, 0.25);
 }
 
 .query-form button[type="submit"] {
-  background-color: #4a69bd; /* Consistent with other buttons */
+  background-color: #4a69bd;
   color: #ffffff;
   padding: 12px 18px;
   border-radius: 4px;
@@ -164,4 +164,24 @@ textarea {
 
 .query-form button[type="submit"]:hover {
   background-color: #3c6382;
+}
+
+@media (max-width: 768px) {
+  .circle-button {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle-icon {
+    height: 50px;
+  }
+
+  .chatbox {
+    bottom: 70px;
+    right: 15px;
+    width: 90vw;
+    max-width: 350px;
+  }
 }

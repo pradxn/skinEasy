@@ -1,0 +1,29 @@
+
+  .left-section {
+    width: 10%;
+    left: 100px;
+  }
+  
+  .right-section {
+    width: 58%;
+  }
+  
+  .upper-right, .lower-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+  
+  .carousel img {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  

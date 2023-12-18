@@ -8,6 +8,9 @@ import PricingTable from './components/Pages/PricingTable.js';
 import LoginPage from './components/Pages/LoginPage.js';
 import AboutUsPage from './components/Pages/AboutUsPage.js';
 
+import Cleanser from './components/Elements/Cleanser.js';
+import ProductPage from './components/Elements/ProductPage.js';
+
 const LandingPage = () => {
     return (
         <Router>
@@ -23,6 +26,7 @@ const LandingPage = () => {
                 <Route path="/services" element={<ComingSoon />} />
 
                 <Route path="/account" element={<LoginPage />} />
+                <Route path="/forgot-password" element={<ComingSoon />} />
 
                 <Route path="/analyze" element={<SebaTest />} />
 
@@ -32,7 +36,6 @@ const LandingPage = () => {
                 <Route path="scalp/combination" element={<ComingSoon />} />
                 <Route path="scalp/dry" element={<ComingSoon />} />
                 <Route path="scalp/oily" element={<ComingSoon />} />
-                
 
                 <Route path="hair/coily" element={<ComingSoon />} />
                 <Route path="hair/curly" element={<ComingSoon />} />
@@ -57,7 +60,7 @@ const LandingPage = () => {
                 <Route path="intimate/innerglutes" element={<ComingSoon />} />
                 <Route path="intimate/innerthighs" element={<ComingSoon />} />
 
-                <Route path="/cleanser" element={<ComingSoon />} />
+                <Route path="/cleanser" element={<Cleanser />} />
                 <Route path="/toner" element={<ComingSoon />} />
                 <Route path="/moisturizer" element={<ComingSoon />} />
                 <Route path="/serum" element={<ComingSoon />} />
@@ -69,6 +72,7 @@ const LandingPage = () => {
 
                 <Route path="/about" element={<AboutUsPage />} />
                 <Route path="/grading-method" element={<ComingSoon />} />
+                <Route path="/barcode" element={<ComingSoon />} />
                 <Route path="/consult" element={<ComingSoon />} />
                 <Route path="/home-consult" element={<ComingSoon />} />
                 <Route path="/shop" element={<ComingSoon />} />
@@ -77,9 +81,12 @@ const LandingPage = () => {
                 <Route path="/blog" element={<ComingSoon />} />
                 <Route path="/sitemap" element={<ComingSoon />} />
 
-
                 <Route path="/legal" element={<ComingSoon />} />
                 <Route path="/privacy" element={<ComingSoon />} />
+
+                <Route path="/cetaphil-daily-cleanser" element={<ProductPage />} />
+                <Route path="/orders" element={<ComingSoon />} />
+                <Route path="/cart" element={<ComingSoon />} />
             </Routes>
         </Router>
     )

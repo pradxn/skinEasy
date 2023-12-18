@@ -1,4 +1,99 @@
+/* TermsFooter.css */
+
 .gradient-container {
+  padding: 90px;
+  text-align: center;
+  color: #fff;
+}
+
+.morning {
+  background: linear-gradient(45deg, #ff5733, #ba6d09, #71a8ee, #3072eb, #1552c6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.night {
+  background: linear-gradient(45deg, #000428, #004e92, #ffffff); /* sunset, moon rise and stars colors */
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.timeline-point {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.timeline-point.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.routine-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.carousel-container {
+  flex: 1;
+}
+
+.carousel-image {
+  width: 33%;
+  justify-content: space-between;
+  padding: 1%;
+  height: auto; /* maintain aspect ratio */
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .gradient-container {
+    padding: 20px;
+  }
+
+  .timeline {
+    flex-direction: column;
+  }
+
+  .timeline-point {
+    margin-bottom: 10px;
+  }
+
+  .routine-content {
+    flex-direction: column;
+  }
+
+  .carousel-image {
+    width: 100%;
+  }
+}
+
+
+
+/*.gradient-container {
     padding: 90px;
     text-align: center;
     color: #fff;
@@ -65,3 +160,4 @@
     border-radius: 8px;
     margin-top: 10px;
   }
+*/

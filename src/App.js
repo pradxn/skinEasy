@@ -48,13 +48,6 @@ function App() {
             </a>
           </div>
 
-          {/* Hamburger Menu for Mobile */}
-          <div className="hamburger-menu">
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-
           {/* Header Menu */}
           <div className="header-menu">
             <nav>

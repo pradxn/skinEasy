@@ -29,7 +29,6 @@ const AboutUs = () => {
             (Not to mention a bunch of smaller, yet still totally annoying, problems.)
           </p>
           <br />
-          <br />
           <div className="see-how-button">
             <a href="/about">See How</a>
           </div>
